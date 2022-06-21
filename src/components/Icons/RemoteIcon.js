@@ -1,8 +1,5 @@
-import styled from 'styled-components'
-
-const RemoteIcon = ({ className }) => (
+const RemoteIcon = () => (
   <svg
-    className={className}
     width='86'
     height='20'
     viewBox='0 0 86 20'
@@ -33,9 +30,4 @@ const RemoteIcon = ({ className }) => (
   </svg>
 )
 
-const Styled = styled(RemoteIcon)`
-  display: flex;
-  fill: ${({ theme }) => theme.palette.icon.contrast};
-`
-Styled.displayName = 'RemoteIcon'
-export default Styled
+export default RemoteIcon

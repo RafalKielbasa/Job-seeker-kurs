@@ -1,6 +1,4 @@
-import styled from 'styled-components'
-
-const LocationIcon = ({ className }) => {
+const LocationIcon = () => {
   return (
     <svg
       width='16'
@@ -8,7 +6,6 @@ const LocationIcon = ({ className }) => {
       viewBox='0 0 16 16'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={className}
     >
       <path
         d='M7.99984 7.66667C9.2885 7.66667 10.3332 6.622 10.3332 5.33333C10.3332 4.04467 9.2885 3 7.99984 3C6.71117 3 5.6665 4.04467 5.6665 5.33333C5.6665 6.622 6.71117 7.66667 7.99984 7.66667Z'
@@ -24,8 +21,4 @@ const LocationIcon = ({ className }) => {
   )
 }
 
-const Styled = styled(LocationIcon)`
-  stroke: ${({ theme }) => theme.palette.icon.contrast};
-`
-Styled.displayName = 'LocationIcon'
-export default Styled
+export default LocationIcon

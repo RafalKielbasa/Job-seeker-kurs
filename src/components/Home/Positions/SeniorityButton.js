@@ -1,10 +1,8 @@
-import { Button } from '@material-ui/core'
-
 import { WrappedVector } from 'src/components/Icons'
 
 import './Position.css'
 
-const SeniorityButton = ({ title }) => {
+const SeniorityButton = () => {
   return (
     <div>
       <button className='Seniority-button'>

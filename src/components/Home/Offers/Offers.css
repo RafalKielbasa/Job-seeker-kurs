@@ -1,0 +1,152 @@
+:root {
+  --white: #ffffff;
+  --black: #222426;
+}
+
+.Offer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 75%;
+  overflow: auto;
+  padding-top: 30px;
+}
+
+.Offer-list::-webkit-scrollbar {
+  width: 8px;
+}
+.Offer-list::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+  border-radius: 10px;
+}
+
+.Offer-color-Ruby,
+.Offer-color-Java,
+.Offer-color-Python,
+.Offer-color-PHP,
+.Offer-color-C,
+.Offer-color-Angular,
+.Offer-color-NodeJS {
+  width: 93%;
+  height: 88px;
+  background-color: #fdff00;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  margin: 0 0 12px 58px;
+}
+
+.Offer-color-Ruby,
+.Offer-color-Angular {
+  background-color: #31e8ff;
+}
+
+.Offer-color-Java,
+.Offer-color-PHP,
+.Offer-color-NodeJS {
+  background-color: #ff8227;
+}
+
+.Offer-content {
+  display: flex;
+  width: calc(100% + 2px);
+  height: 94px;
+  transform: translate(6px, -7px);
+  transition: 0.5s;
+  background-color: #ffffff;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+}
+
+.Offer-content:hover {
+  transform: translate(-1px, -1px);
+  transition: 0.5s;
+}
+.Logo {
+  width: 70px;
+  height: 70px;
+  margin: 12px 32px 12px 20px;
+}
+.Logo svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--black);
+}
+.Offer-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 20px 22px 0;
+}
+.Left-side-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.Title svg {
+  margin-left: 16px;
+  transform: translateY(4px);
+}
+
+.Location {
+  display: flex;
+  font-size: 12px;
+}
+.Location div:first-of-type {
+  margin-right: 16px;
+}
+.Location div:nth-of-type(3) {
+  display: flex;
+  margin: 0 8px 0 9px;
+}
+.Location div:nth-of-type(3) svg {
+  stroke: #8a9199;
+  width: 12px;
+  height: 14px;
+  margin-top: 2px;
+}
+.Location div:nth-of-type(5) {
+  color: #490df4;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.Divider {
+  transform: translateY(2px);
+  height: 15px;
+  border-right: 1px solid #8a9199;
+}
+.Details-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 161px;
+  height: 40px;
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  margin: 27px 20px 0 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.Right-site-info {
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+}
+.Salary {
+  font-size: 16px;
+  font-weight: 700;
+  color: #490df4;
+}
+.Technology {
+  height: 23px;
+  width: fit-content;
+  font-size: 12px;
+  background-color: #f9f9fc;
+  border-radius: 6px;
+  margin-top: 12px;
+}

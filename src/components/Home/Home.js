@@ -1,5 +1,6 @@
 import PositionBar from './Positions'
 import TechnologyBar from './Technologies'
+import Offers from './Offers'
 
 import './Home.css'
 
@@ -10,6 +11,7 @@ function Home() {
         <PositionBar />
         <TechnologyBar />
       </div>
+      <Offers />
     </div>
   )
 }
