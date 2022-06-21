@@ -1,0 +1,121 @@
+:root {
+  --white: #ffffff;
+  --black: #222426;
+}
+
+.Position-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+  height: 78px;
+  border-radius: 10px;
+  background-color: #222426;
+  margin-top: 20px 0 0 53px;
+  padding-left: 24px;
+}
+
+.Position-tabs {
+  display: flex;
+}
+
+.Position-tab,
+.Game,
+.Analytics,
+.DevOps,
+.Testing,
+.Support {
+  width: 136px;
+  height: 38px;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  margin-right: 16px;
+  color: var(--white);
+  cursor: pointer;
+}
+.Position-box {
+  display: flex;
+  justify-content: start;
+}
+
+.Position-box svg {
+  width: 24px;
+  height: 24px;
+  margin: 7px 0 0 20px;
+  stroke: var(--white);
+}
+.Position-box span {
+  margin: 10px 0 0 10px;
+  font-size: 14px;
+  user-select: none;
+}
+
+.Game,
+.Analytics,
+.DevOps,
+.Support,
+.Testing {
+  color: var(--black);
+}
+
+.Analytics {
+  background-color: #a621a3;
+}
+.Analytics svg {
+  stroke: var(--black);
+}
+
+.DevOps {
+  background-color: #ff8227;
+}
+.DevOps svg {
+  stroke: var(--black);
+}
+
+.Support {
+  background-color: #fdff00;
+}
+.Support svg {
+  stroke: var(--black);
+}
+.Testing {
+  background-color: #fd4dc7;
+}
+.Testing svg {
+  stroke: var(--black);
+}
+
+.Game {
+  background-color: #00ff93;
+}
+.Game svg {
+  stroke: var(--black);
+}
+
+.Seniority-button {
+  display: flex;
+  align-items: center;
+  width: 159px;
+  height: 40px;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  background-color: var(--black);
+  color: var(--white);
+  margin-right: 20px;
+}
+.Seniority-button span {
+  margin-left: 16px;
+}
+.Seniority-button > svg {
+  transform: translate(49px, 0px);
+  width: 30px;
+  height: 30px;
+}
+
+.Seniority-button svg rect {
+  stroke: var(--white);
+}
+
+.Seniority-button svg svg path {
+  stroke: var(--white);
+}

@@ -1,0 +1,64 @@
+export const getIconOnFly = (name) => {
+  switch (name) {
+    case 'React':
+      return require('../components/Icons/ReactIcon').default
+    case 'JavaScript':
+      return require('../components/Icons/JavaScriptIcon').default
+    case 'Python':
+      return require('../components/Icons/PythonIcon').default
+    case 'C':
+      return require('../components/Icons/CIcon').default
+    case 'HTML5':
+      return require('../components/Icons/HTML5Icon').default
+    case 'Java':
+      return require('../components/Icons/JavaIcon').default
+    case 'C++':
+      return require('../components/Icons/CPlusPlusIcon').default
+    case 'NodeJS':
+      return require('../components/Icons/NodeJSIcon').default
+    case 'PHP':
+      return require('../components/Icons/PHPIcon').default
+    case '.Net':
+      return require('../components/Icons/DotNetIcon').default
+    case 'Go':
+      return require('../components/Icons/GoIcon').default
+    case 'Angular':
+      return require('../components/Icons/AngularIcon').default
+    case 'Ruby':
+      return require('../components/Icons/RubyIcon').default
+    case 'Scala':
+      return require('../components/Icons/ScalaIcon').default
+    case 'Vue':
+      return require('../components/Icons/VueIcon').default
+    case 'Mobile':
+      return require('../components/Icons/MobilePhoneIcon').default
+    case 'UX/UI':
+      return require('../components/Icons/UIUXIcon').default
+    case 'Security':
+      return require('../components/Icons/SecurityIcon').default
+    case 'All':
+      return require('../components/Icons/AllIcon').default
+    case 'Testing':
+      return require('../components/Icons/TestingIcon').default
+    case 'PM':
+      return require('../components/Icons/PMIcon').default
+    case 'Data':
+      return require('../components/Icons/DataIcon').default
+    case 'Other':
+      return require('../components/Icons/OtherIcon').default
+    case 'DevOps':
+      return require('../components/Icons/DevOpsIcon').default
+    case 'Game':
+      return require('../components/Icons/GameIcon').default
+    case 'Support':
+      return require('../components/Icons/SupportIcon').default
+    case 'Admin':
+      return require('../components/Icons/AdminIcon').default
+    case 'Analytics':
+      return require('../components/Icons/AnalyticsIcon').default
+    case 'Architecture':
+      return require('../components/Icons/ArchitectureIcon').default
+    default:
+      return require('../components/Icons/ReactIcon').default
+  }
+}
