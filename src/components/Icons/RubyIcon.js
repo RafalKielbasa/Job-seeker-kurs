@@ -1,9 +1,6 @@
-import styled from 'styled-components'
-
-const RubyIcon = ({ className }) => {
+const RubyIcon = () => {
   return (
     <svg
-      className={className}
       width='128'
       height='128'
       viewBox='0 0 128 128'
@@ -19,9 +16,4 @@ const RubyIcon = ({ className }) => {
   )
 }
 
-const Styled = styled(RubyIcon)`
-  display: flex;
-  fill: ${({ theme }) => theme.palette.icon.contrast};
-`
-Styled.displayName = 'RubyIcon'
-export default Styled
+export default RubyIcon

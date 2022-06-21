@@ -57,39 +57,32 @@
 .Testing {
   color: var(--black);
 }
+.Analytics svg,
+.Game svg,
+.DevOps svg,
+.Support svg,
+.Testing svg {
+  stroke: var(--black);
+}
 
 .Analytics {
   background-color: #a621a3;
-}
-.Analytics svg {
-  stroke: var(--black);
 }
 
 .DevOps {
   background-color: #ff8227;
 }
-.DevOps svg {
-  stroke: var(--black);
-}
 
 .Support {
   background-color: #fdff00;
 }
-.Support svg {
-  stroke: var(--black);
-}
+
 .Testing {
   background-color: #fd4dc7;
-}
-.Testing svg {
-  stroke: var(--black);
 }
 
 .Game {
   background-color: #00ff93;
-}
-.Game svg {
-  stroke: var(--black);
 }
 
 .Seniority-button {

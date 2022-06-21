@@ -1,9 +1,6 @@
-import styled from 'styled-components'
-
-const AngularIcon = ({ className }) => {
+const AngularIcon = () => {
   return (
     <svg
-      className={className}
       width='128'
       height='128'
       viewBox='0 0 128 128'
@@ -15,9 +12,4 @@ const AngularIcon = ({ className }) => {
   )
 }
 
-const Styled = styled(AngularIcon)`
-  display: flex;
-  fill: ${({ theme }) => theme.palette.icon.contrast};
-`
-Styled.displayName = 'AngularIcon'
-export default Styled
+export default AngularIcon

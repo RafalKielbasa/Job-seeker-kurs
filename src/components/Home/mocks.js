@@ -1,11 +1,11 @@
 export const POSITIONS = ['Game', 'Analytics', 'DevOps', 'Support', 'Testing']
 export const TECHNOLOGIES = [
-  'JavaScript',
+  'Angular',
   'Python',
   'C',
   'HTML5',
   'Java',
-  'C++',
+  'Ruby',
   'NodeJS',
   'PHP',
 ]

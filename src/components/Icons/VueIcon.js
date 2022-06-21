@@ -1,9 +1,6 @@
-import styled from 'styled-components'
-
-const VueIcon = ({ className }) => {
+const VueIcon = () => {
   return (
     <svg
-      className={className}
       width='128'
       height='128'
       viewBox='0 0 128 128'
@@ -15,9 +12,4 @@ const VueIcon = ({ className }) => {
   )
 }
 
-const Styled = styled(VueIcon)`
-  display: flex;
-  fill: ${({ theme }) => theme.palette.icon.contrast};
-`
-Styled.displayName = 'VueIcon'
-export default Styled
+export default VueIcon
