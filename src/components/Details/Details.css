@@ -1,0 +1,123 @@
+.Page {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+  padding: 50px 0;
+}
+.Content {
+  width: 1050px;
+  height: 100%;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  background-color: var(--white);
+}
+.Nav-bar {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 24px);
+  padding: 20px 12px 0 12px;
+}
+.Back {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  cursor: pointer;
+}
+.Back svg {
+  transform: rotate(90deg);
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+.Apply {
+  display: flex;
+}
+.Apply div:last-of-type {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 122px;
+  height: 42px;
+  border: 2px solid var(--orange);
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 7px 0 11px 0;
+}
+.Icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  margin-right: 8px;
+}
+.Offer-information {
+  box-sizing: border-box;
+  display: flex;
+  width: calc(100% - 24px);
+  height: 127px;
+  background-color: var(--backgound);
+  border-radius: 10px;
+  margin: 28px 0 0 12px;
+  padding: 16px 40px 16px 20px;
+}
+.Offer-information svg {
+  width: 70px;
+  height: 70px;
+  fill: var(--black);
+  margin-top: 10px;
+}
+.Offer-info-tab {
+  margin-left: 30px;
+}
+
+.Offer-info-tab div:first-of-type {
+  display: flex;
+}
+.Offer-info-tab div:first-of-type div:first-of-type {
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 12px;
+}
+
+.Tab1 {
+  box-sizing: border-box;
+  width: 96px;
+  height: 22px;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--orange);
+  padding: 1px 9px;
+  margin-right: 12px;
+}
+
+.Tab2 {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  max-width: 96px;
+  height: 22px;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--darkGrey);
+  padding: 1px 12px;
+}
+
+.Offer-info-tab > div:nth-of-type(2) {
+  font-weight: 700;
+  color: var(--violet);
+  margin-top: 16px;
+}
+.Offer-info-tab > div:nth-of-type(2) span {
+  font-weight: 500;
+  color: var(--black);
+}

@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom'
+
 import { ReactIcon, LocationIcon, RemoteIcon } from 'src/components/Icons'
 
 import './Offers.css'
@@ -12,7 +14,7 @@ const OfferTab = ({ offer }) => {
     remote,
     expLvl,
   } = offer
-
+  const navigate = useNavigate()
   return (
     <div className={`Offer-color-${technology}`}>
       <div className='Offer-content'>
@@ -41,7 +43,9 @@ const OfferTab = ({ offer }) => {
             <div className='Technology'>{technology}</div>
           </div>
         </div>
-        <div className='Details-button'>Details</div>
+        <div className='Details-button' onClick={() => navigate('/details/1')}>
+          Details
+        </div>
       </div>
     </div>
   )

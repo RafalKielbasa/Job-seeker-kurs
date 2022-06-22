@@ -1,6 +1,4 @@
-import styled from 'styled-components'
-
-const Share = ({ className }) => {
+const Share = () => {
   return (
     <svg
       width='24'
@@ -44,9 +42,4 @@ const Share = ({ className }) => {
   )
 }
 
-const Styled = styled(Share)`
-  display: flex;
-  stroke: ${({ theme }) => theme.palette.icon.dark};
-`
-Styled.displayName = 'Share'
-export default Styled
+export default Share
