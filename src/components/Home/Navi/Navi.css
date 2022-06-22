@@ -1,0 +1,46 @@
+:root {
+  --white: #ffffff;
+  --black: #222426;
+}
+
+.Navi {
+  display: flex;
+  justify-content: flex-end;
+  width: 93%;
+  height: 66px;
+  margin-left: 57px;
+}
+.Sort-by {
+  display: flex;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 24px;
+}
+.Option {
+  font-weight: 300;
+  color: #490df4;
+  margin: 0 11px 0 8px;
+}
+
+.Vector-open {
+  transform: translateY(4px) rotate(180deg);
+}
+.Vector-open svg path,
+.Vector:hover svg path {
+  stroke: #490df4;
+}
+.Option-names {
+  transform: translate();
+  z-index: 1;
+  position: absolute;
+  width: 144px;
+  border: 1px solid #490df4;
+  border-radius: 0px 0px 10px 10px;
+  background-color: var(--white);
+  padding: 6px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+.Option-names div {
+  padding: 10px 16px;
+}

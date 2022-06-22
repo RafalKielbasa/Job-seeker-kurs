@@ -130,8 +130,10 @@
 .Seniority-button-open {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: absolute;
   top: 40px;
+  box-sizing: border-box;
   width: 159px;
   height: 40px;
   border: 1px solid var(--white);
@@ -139,30 +141,32 @@
   background-color: var(--black);
   color: var(--white);
   margin-right: 20px;
+  padding-right: 4px;
   cursor: pointer;
   z-index: 2;
 }
+.Seniority-button:hover,
+.Seniority-button-open {
+  border-color: #490df4;
+}
+
 .Seniority-button span,
 .Seniority-button-open span {
   margin: 0 0 1px 16px;
   font-size: 14px;
 }
 .Seniority-button > svg {
-  transform: translate(54px, 0px);
   width: 30px;
   height: 30px;
 }
 .Seniority-button-open > svg {
-  transform: translate(54px, 0px) rotate(180deg);
+  transform: rotate(180deg);
   width: 30px;
   height: 30px;
 }
 
 .Seniority-button svg rect,
-.Seniority-button-open svg rect {
-  stroke: var(--white);
-}
-
+.Seniority-button-open svg rect,
 .Seniority-button svg svg path,
 .Seniority-button-open svg svg path {
   stroke: var(--white);
@@ -174,14 +178,15 @@
   box-sizing: border-box;
   width: 161px;
   height: fit-content;
-  border: 1px solid var(--white);
+  border: 1px solid #490df4;
   border-radius: 10px;
   background-color: var(--black);
   z-index: 1;
   padding: 25px 0 5px 0;
 }
 
-.Seniority-opion {
+.Seniority-option,
+.Seniority-option-active {
   width: 100%;
   height: 38px;
   background-color: var(--black);
@@ -190,6 +195,8 @@
   text-align: start;
   padding-left: 14px;
 }
-.Seniority-opion:hover {
+
+.Seniority-option:hover,
+.Seniority-option-active {
   background-color: #000000;
 }

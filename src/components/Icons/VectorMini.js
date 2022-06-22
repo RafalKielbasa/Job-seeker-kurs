@@ -1,9 +1,6 @@
-import styled from 'styled-components'
-
-const Vector = ({ className }) => {
+const Vector = () => {
   return (
     <svg
-      className={className}
       width='12'
       height='8'
       viewBox='0 0 12 8'
@@ -20,9 +17,4 @@ const Vector = ({ className }) => {
   )
 }
 
-const Styled = styled(Vector)`
-  display: flex;
-  stroke: ${({ theme }) => theme.palette.icon.dark};
-`
-Styled.displayName = 'Vector'
-export default Styled
+export default Vector

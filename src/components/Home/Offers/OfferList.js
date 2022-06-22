@@ -1,12 +1,10 @@
-import { JOBOFFERS } from 'src/utils/mocks'
-
 import OfferTab from './OfferTab'
 import './Offers.css'
 
-const OfferList = () => {
+const OfferList = ({ filteredOffers }) => {
   return (
     <div className='Offer-list'>
-      {JOBOFFERS.map((offer) => (
+      {filteredOffers?.map((offer) => (
         <OfferTab offer={offer} />
       ))}
     </div>

@@ -1,14 +1,15 @@
-import { useState } from 'react'
-
 import { POSITIONS } from 'src/utils/mocks'
 
 import PositionTab from './PositionTab'
 import SeniorityButton from './SeniorityButton'
 import './Position.css'
 
-const PositionBar = () => {
-  const [selectedPosition, setSelectedPosition] = useState('')
-
+const PositionBar = ({
+  selectedPosition,
+  setSelectedPosition,
+  seniority,
+  setSeniority,
+}) => {
   const handlePositionClick = (name) =>
     name === selectedPosition
       ? setSelectedPosition('')
@@ -26,7 +27,7 @@ const PositionBar = () => {
           />
         ))}
       </div>
-      <SeniorityButton title={'elo'} />
+      <SeniorityButton seniority={seniority} setSeniority={setSeniority} />
     </div>
   )
 }

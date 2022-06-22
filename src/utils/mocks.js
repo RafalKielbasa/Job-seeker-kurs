@@ -17,8 +17,9 @@ export const JOBOFFERS = [
     salaryMin: 5000,
     salaryMax: 10000,
     technology: 'Ruby',
-    remote: false,
+    remote: true,
     expLvl: 'Mid',
+    positionName: 'Analytics',
   },
   {
     position: 'Java Developer',
@@ -29,6 +30,7 @@ export const JOBOFFERS = [
     technology: 'Java',
     remote: false,
     expLvl: 'Mid',
+    positionName: 'DevOps',
   },
   {
     position: 'Senior Python Developer',
@@ -39,6 +41,7 @@ export const JOBOFFERS = [
     technology: 'Python',
     remote: true,
     expLvl: 'Senior',
+    positionName: 'Support',
   },
   {
     position: 'Junior PHP Developer',
@@ -49,6 +52,7 @@ export const JOBOFFERS = [
     technology: 'PHP',
     remote: true,
     expLvl: 'Junior',
+    positionName: 'DevOps',
   },
   {
     position: 'Senior C developer',
@@ -59,6 +63,7 @@ export const JOBOFFERS = [
     technology: 'C',
     remote: false,
     expLvl: 'Senior',
+    positionName: 'Game',
   },
   {
     position: 'Angular Developer',
@@ -69,6 +74,7 @@ export const JOBOFFERS = [
     technology: 'Angular',
     remote: true,
     expLvl: 'Mid',
+    positionName: 'Analytics',
   },
   {
     position: 'Senior NodeJS Developer',
@@ -79,7 +85,10 @@ export const JOBOFFERS = [
     technology: 'NodeJS',
     remote: false,
     expLvl: 'Senior',
+    positionName: 'DevOps',
   },
 ]
 
 export const SENIORITY = ['Junior', 'Mid', 'Senior']
+
+export const SORTBY = ['Lowest salary', 'Highest salary']

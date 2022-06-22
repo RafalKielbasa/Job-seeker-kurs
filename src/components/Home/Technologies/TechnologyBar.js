@@ -1,15 +1,20 @@
-import { useState } from 'react'
-
 import { TECHNOLOGIES } from 'src/utils/mocks'
 
 import TechnologyTab from './TechnologyTab'
 import './Technologies.css'
 
-const TechnologyBar = () => {
-  const [technologiesArray, setTechnologiesArray] = useState([])
-
+const TechnologyBar = ({
+  technologiesArray,
+  setTechnologiesArray,
+  isRemote,
+  setIsRemote,
+}) => {
   const stateButtonName =
     technologiesArray.length === 0 ? 'Add all' : 'Clear all'
+
+  const remoteClassName = isRemote ? 'Remote-active' : 'Remote'
+
+  const toggleChange = () => setIsRemote((prev) => !prev)
 
   const handleStateButtonCLick = () =>
     technologiesArray.length === 0
@@ -18,7 +23,9 @@ const TechnologyBar = () => {
 
   const handleTechnologyCLick = (techName) => {
     if (technologiesArray.includes(techName)) {
-      const filteredArray = technologiesArray.filter((item) => item != techName)
+      const filteredArray = technologiesArray.filter(
+        (item) => item !== techName
+      )
       return setTechnologiesArray(filteredArray)
     }
     setTechnologiesArray([...technologiesArray, techName])
@@ -40,7 +47,9 @@ const TechnologyBar = () => {
         ))}
       </div>
       <div className='Additional-filters'>
-        <div className='Remote'>100% remote</div>
+        <div className={remoteClassName} onClick={toggleChange}>
+          100% remote
+        </div>
         <div className='Price'> Price range </div>
       </div>
     </div>
