@@ -1,4 +1,4 @@
-import { JOBOFFERS } from 'src/components/Home/mocks'
+import { JOBOFFERS } from 'src/utils/mocks'
 
 import OfferTab from './OfferTab'
 import './Offers.css'

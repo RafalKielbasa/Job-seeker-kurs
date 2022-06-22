@@ -81,3 +81,5 @@ export const JOBOFFERS = [
     expLvl: 'Senior',
   },
 ]
+
+export const SENIORITY = ['Junior', 'Mid', 'Senior']

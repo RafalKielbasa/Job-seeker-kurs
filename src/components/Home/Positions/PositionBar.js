@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { POSITIONS } from 'src/components/Home/mocks'
+import { POSITIONS } from 'src/utils/mocks'
 
 import PositionTab from './PositionTab'
 import SeniorityButton from './SeniorityButton'

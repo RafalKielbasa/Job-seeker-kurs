@@ -10,13 +10,49 @@
   width: 92%;
   height: 78px;
   border-radius: 10px;
-  background-color: #222426;
+  background-color: var(--black);
   margin-top: 20px 0 0 53px;
   padding-left: 24px;
 }
 
 .Position-tabs {
   display: flex;
+}
+.Color-Analytics,
+.Color-Game,
+.Color-DevOps,
+.Color-Testing,
+.Color-Support {
+  width: 136px;
+  height: 37px;
+  margin-right: 16px;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+}
+.Color-Analytics {
+  background-color: #a621a3;
+}
+.Color-Game {
+  background-color: #00ff93;
+}
+.Color-DevOps {
+  background-color: #ff8227;
+}
+.Color-Testing {
+  background-color: #fd4dc7;
+}
+.Color-Support {
+  background-color: #fdff00;
+}
+
+.Position-tab {
+  background-color: var(--black);
+  transform: translate(4px, -1.5px);
+  transition: 0.3s;
+}
+.Position-tab:hover {
+  transform: translate(-0.5px, -1px);
+  transition: 0.3s;
 }
 
 .Position-tab,
@@ -55,6 +91,7 @@
 .DevOps,
 .Support,
 .Testing {
+  transform: translate(-0.5px, -1px);
   color: var(--black);
 }
 .Analytics svg,
@@ -84,10 +121,17 @@
 .Game {
   background-color: #00ff93;
 }
+.Seniority-container {
+  width: 159px;
+  margin-right: 20px;
+}
 
-.Seniority-button {
+.Seniority-button,
+.Seniority-button-open {
   display: flex;
   align-items: center;
+  position: absolute;
+  top: 40px;
   width: 159px;
   height: 40px;
   border: 1px solid var(--white);
@@ -95,20 +139,57 @@
   background-color: var(--black);
   color: var(--white);
   margin-right: 20px;
+  cursor: pointer;
+  z-index: 2;
 }
-.Seniority-button span {
-  margin-left: 16px;
+.Seniority-button span,
+.Seniority-button-open span {
+  margin: 0 0 1px 16px;
+  font-size: 14px;
 }
 .Seniority-button > svg {
-  transform: translate(49px, 0px);
+  transform: translate(54px, 0px);
+  width: 30px;
+  height: 30px;
+}
+.Seniority-button-open > svg {
+  transform: translate(54px, 0px) rotate(180deg);
   width: 30px;
   height: 30px;
 }
 
-.Seniority-button svg rect {
+.Seniority-button svg rect,
+.Seniority-button-open svg rect {
   stroke: var(--white);
 }
 
-.Seniority-button svg svg path {
+.Seniority-button svg svg path,
+.Seniority-button-open svg svg path {
   stroke: var(--white);
+}
+
+.Seniority-options {
+  position: absolute;
+  transition: 0.4s;
+  box-sizing: border-box;
+  width: 161px;
+  height: fit-content;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  background-color: var(--black);
+  z-index: 1;
+  padding: 25px 0 5px 0;
+}
+
+.Seniority-opion {
+  width: 100%;
+  height: 38px;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  text-align: start;
+  padding-left: 14px;
+}
+.Seniority-opion:hover {
+  background-color: #000000;
 }

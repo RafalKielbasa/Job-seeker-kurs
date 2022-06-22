@@ -9,10 +9,12 @@ const PositionTab = ({ positionName, onClick, selectedPosition }) => {
     selectedPosition === positionName ? positionName : 'Position-tab'
 
   return (
-    <div className={className} onClick={onClick}>
-      <div className='Position-box'>
-        <Icon />
-        <span>{positionName}</span>
+    <div className={`Color-${positionName}`}>
+      <div className={className} onClick={onClick}>
+        <div className='Position-box'>
+          <Icon />
+          <span>{positionName}</span>
+        </div>
       </div>
     </div>
   )

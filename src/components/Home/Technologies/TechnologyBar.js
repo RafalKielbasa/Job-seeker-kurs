@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { TECHNOLOGIES } from '../mocks'
+import { TECHNOLOGIES } from 'src/utils/mocks'
 
 import TechnologyTab from './TechnologyTab'
 import './Technologies.css'
