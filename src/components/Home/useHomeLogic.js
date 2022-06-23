@@ -9,6 +9,7 @@ export default function useHomeLogic() {
   const [seniority, setSeniority] = useState('')
   const [sort, setSort] = useState(SORTBY[0])
   const [filteredOffers, setFilteredOffers] = useState([])
+  const [isListView, setIsListView] = useState(true)
   const [isRemote, setIsRemote] = useState(false)
 
   const positionLength = selectedPosition.length
@@ -62,5 +63,7 @@ export default function useHomeLogic() {
     filteredOffers,
     isRemote,
     setIsRemote,
+    isListView,
+    setIsListView,
   }
 }

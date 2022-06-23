@@ -36,11 +36,14 @@ const SortBy = ({ sort, setSort }) => {
       </div>
       {isOpen && (
         <div className='Option-names'>
-          {SORTBY.map((item) => (
-            <div key={item} onClick={() => onClick(item)}>
-              {item}
-            </div>
-          ))}
+          {SORTBY.map(
+            (item) =>
+              item !== sort && (
+                <div key={item} onClick={() => onClick(item)}>
+                  {item}
+                </div>
+              )
+          )}
         </div>
       )}
     </div>

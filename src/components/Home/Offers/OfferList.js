@@ -1,11 +1,11 @@
-import OfferTab from './OfferTab'
+import OfferListItem from './OfferListItem'
 import './Offers.css'
 
 const OfferList = ({ filteredOffers }) => {
   return (
     <div className='Offer-list'>
       {filteredOffers?.map((offer) => (
-        <OfferTab offer={offer} />
+        <OfferListItem offer={offer} />
       ))}
     </div>
   )

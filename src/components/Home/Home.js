@@ -19,6 +19,8 @@ function Home() {
     filteredOffers,
     isRemote,
     setIsRemote,
+    isListView,
+    setIsListView,
   } = Logic()
   return (
     <div className='Page-container'>

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { ReactIcon, LocationIcon, RemoteIcon } from 'src/components/Icons'
 
 import './Offers.css'
-const OfferTab = ({ offer }) => {
+const OfferListItem = ({ offer }) => {
   const {
     id,
     position,
@@ -55,4 +55,4 @@ const OfferTab = ({ offer }) => {
   )
 }
 
-export default OfferTab
+export default OfferListItem

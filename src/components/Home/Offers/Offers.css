@@ -108,7 +108,7 @@
   margin-top: 2px;
 }
 .Location div:nth-of-type(5) {
-  color: #490df4;
+  color: var(--violet);
   font-weight: 700;
   margin-left: 8px;
 }
@@ -129,6 +129,10 @@
   margin: 27px 20px 0 0;
   font-size: 16px;
   font-weight: 700;
+  cursor: pointer;
+}
+.Details-button:hover {
+  border-color: var(--violet);
 }
 .Right-site-info {
   display: flex;
