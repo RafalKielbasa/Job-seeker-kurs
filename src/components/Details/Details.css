@@ -2,22 +2,21 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
   background-color: var(--background);
   padding: 50px 0;
 }
 .Content {
   width: 1050px;
-  height: 100%;
+  height: fit-content;
   border: 1px solid var(--black);
   border-radius: 10px;
   background-color: var(--white);
+  padding: 20px 12px;
 }
 .Nav-bar {
   display: flex;
   justify-content: space-between;
   width: calc(100% - 24px);
-  padding: 20px 12px 0 12px;
 }
 .Back {
   display: flex;
@@ -59,11 +58,11 @@
 .Offer-information {
   box-sizing: border-box;
   display: flex;
-  width: calc(100% - 24px);
+  width: 100%;
   height: 127px;
-  background-color: var(--backgound);
+  background-color: var(--background);
   border-radius: 10px;
-  margin: 28px 0 0 12px;
+  margin-top: 28px;
   padding: 16px 40px 16px 20px;
 }
 .Offer-information svg {
@@ -120,4 +119,265 @@
 .Offer-info-tab > div:nth-of-type(2) span {
   font-weight: 500;
   color: var(--black);
+}
+
+.Offer-info-tab > div:nth-of-type(3) {
+  display: flex;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.Offer-info-tab > div:nth-of-type(3) > div:first-of-type {
+  color: var(--violet);
+  text-decoration: underline 2px;
+  margin-right: 12px;
+}
+.Offer-info-tab > div:nth-of-type(3) > div:nth-of-type(3) {
+  transform: translateY(-11px);
+  margin: 0 16px;
+}
+.Offer-info-tab > div:nth-of-type(3) > div:nth-of-type(3) svg {
+  transform: translateY(2px);
+  stroke: var(--black);
+  fill: none;
+  width: 12px;
+  height: 14px;
+  margin-right: 6px;
+}
+.Offer-info-tab > div:nth-of-type(3) > div:nth-of-type(5) {
+  color: var(--violet);
+  font-weight: 700;
+  margin-left: 12px;
+}
+.Tabs-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  margin: 24px 0;
+}
+.Information-tab {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 158px;
+  height: 158px;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+}
+
+.Round-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  border: 1px solid var(--black);
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--background);
+  margin: 24px 0 12px 0;
+}
+
+.Round-wrapper svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--black);
+}
+.Information-tab > span:first-of-type {
+  font-weight: 400;
+}
+.Information-tab > span:last-of-type {
+  font-weight: 700;
+}
+.Grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    'topLeft topLeft topLeft topRight topRight'
+    'bottomLeft bottomLeft bottomRight bottomRight bottomRight';
+  column-gap: 10px;
+  row-gap: 24px;
+  width: 100%;
+}
+
+.Top-left,
+.Top-right,
+.Bottom-right {
+  grid-area: topLeft;
+  box-sizing: border-box;
+
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 26px;
+}
+.Top-left > div,
+.Top-right > div {
+  margin-top: 24px;
+  background-color: var(--white);
+}
+.Top-right,
+.Bottom-right {
+  grid-area: topRight;
+  border-color: var(--background);
+  background-color: var(--background);
+}
+
+.Bottom-left {
+  grid-area: bottomLeft;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.Bottom-left div {
+  height: 44px;
+  box-sizing: border-box;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  font-weight: 400;
+  padding: 12px 24px;
+}
+
+.Bottom-left div span {
+  font-weight: 700;
+}
+
+.Bottom-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  grid-area: bottomRight;
+}
+.Bottom-right div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  height: 58px;
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.More-info {
+  padding: 16px 0;
+}
+
+.Info-title {
+  font-weight: 700;
+  margin: 40px 0;
+}
+
+.Info-title div:first-of-type {
+  margin-bottom: 16px;
+}
+
+.Info-line {
+  display: flex;
+  font-weight: 400;
+}
+
+.Orange-dot {
+  max-width: 4px;
+  max-height: 4px;
+  min-width: 4px;
+  min-height: 4px;
+  background-color: var(--orange);
+  border-radius: 50%;
+  margin: 10px 16px 0 0;
+}
+
+.Conditions {
+  font-size: 14px;
+}
+
+.Apply-job-form {
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  margin: 32px 20px;
+  padding: 32px 40px;
+}
+.Apply-job-form > div:first-of-type {
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.Form-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+.Form-input {
+  display: flex;
+  flex-direction: column;
+}
+.Form-input input {
+  height: 40px;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+}
+
+.Form-input div {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.File-input {
+  grid-row: 2/4;
+  grid-column: 2/3;
+}
+
+.File-input div:first-of-type {
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.File-input > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 128px;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+}
+.File-input > div:last-of-type > div:first-of-type {
+  margin: 8px 0px;
+}
+.File-input > div:last-of-type > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+.Check-box {
+  margin: 8px 0;
+}
+
+.Check-box span {
+  color: var(--darkGrey);
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.Check-box span span {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--violet);
+  border-bottom: 2px solid var(--violet);
+}
+
+.Apply-button {
+  width: 100%;
+  height: 42px;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 900;
+  margin-top: 12px;
 }

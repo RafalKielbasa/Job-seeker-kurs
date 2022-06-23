@@ -5,6 +5,7 @@ import { ReactIcon, LocationIcon, RemoteIcon } from 'src/components/Icons'
 import './Offers.css'
 const OfferTab = ({ offer }) => {
   const {
+    id,
     position,
     company,
     city,
@@ -43,7 +44,10 @@ const OfferTab = ({ offer }) => {
             <div className='Technology'>{technology}</div>
           </div>
         </div>
-        <div className='Details-button' onClick={() => navigate('/details/1')}>
+        <div
+          className='Details-button'
+          onClick={() => navigate(`/details/${id}`)}
+        >
           Details
         </div>
       </div>

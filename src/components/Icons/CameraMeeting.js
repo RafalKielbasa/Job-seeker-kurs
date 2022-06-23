@@ -1,9 +1,6 @@
-import styled from 'styled-components'
-
-const CameraMeeting = ({ className }) => {
+const CameraMeeting = () => {
   return (
     <svg
-      className={className}
       width='24'
       height='24'
       viewBox='0 0 24 24'
@@ -19,8 +16,4 @@ const CameraMeeting = ({ className }) => {
   )
 }
 
-const Styled = styled(CameraMeeting)`
-  stroke: ${({ theme }) => theme.palette.icon.contrast};
-`
-Styled.displayName = 'CameraMeeting'
-export default Styled
+export default CameraMeeting

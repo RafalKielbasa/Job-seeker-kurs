@@ -1,6 +1,4 @@
-import styled from 'styled-components'
-
-const Buildings = ({ className }) => {
+const Buildings = () => {
   return (
     <svg
       width='24'
@@ -8,7 +6,6 @@ const Buildings = ({ className }) => {
       viewBox='0 0 24 24'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={className}
     >
       <path
         d='M11 22.9998C11 23.1324 10.9473 23.2595 10.8536 23.3533C10.7598 23.4471 10.6326 23.4998 10.5 23.4998H2.5C2.36739 23.4998 2.24021 23.4471 2.14645 23.3533C2.05268 23.2595 2 23.1324 2 22.9998V6.82476C2.00024 6.72769 2.02874 6.63278 2.08201 6.55163C2.13529 6.47048 2.21103 6.40659 2.3 6.36776L10.3 2.81176C10.376 2.7786 10.459 2.76485 10.5417 2.77176C10.6243 2.77867 10.7039 2.80602 10.7733 2.85135C10.8428 2.89667 10.8998 2.95855 10.9394 3.03142C10.979 3.10429 10.9998 3.18585 11 3.26876V22.9998Z'
@@ -45,8 +42,4 @@ const Buildings = ({ className }) => {
   )
 }
 
-const Styled = styled(Buildings)`
-  stroke: ${({ theme }) => theme.palette.icon.contrast};
-`
-Styled.displayName = 'Buildings'
-export default Styled
+export default Buildings
