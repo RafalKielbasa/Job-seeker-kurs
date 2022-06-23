@@ -25,17 +25,81 @@
   stroke: var(--violet);
 }
 .Option-names {
-  transform: translate();
+  transform: translateX(24px);
   z-index: 1;
   position: absolute;
-  width: 144px;
+  width: 120px;
   border: 1px solid var(--violet);
   border-radius: 0px 0px 10px 10px;
   background-color: var(--white);
-  padding: 6px 0;
   font-size: 14px;
   cursor: pointer;
 }
 .Option-names div {
   padding: 10px 16px;
+}
+.List-layout,
+.Grid-layout,
+.Active-grid-layout,
+.Active-list-layout {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.Grid-layout,
+.Active-grid-layout {
+  margin-left: 10px;
+}
+.Active-list-layout > svg {
+  background: var(--black);
+  border: 0;
+  border-radius: 10px;
+}
+.Active-list-layout > svg path {
+  fill: var(--white);
+  stroke: var(--white);
+  background: var(--black);
+  border: 0;
+  border-radius: 10px;
+}
+
+.List-layout svg {
+  stroke: var(--black);
+}
+.Grid-layout svg {
+  fill: var(--background);
+}
+
+.Grid-layout svg rect:nth-last-of-type(3),
+.Grid-layout svg rect:nth-last-of-type(5),
+.Grid-layout svg rect:nth-last-of-type(7),
+.Grid-layout svg rect:nth-last-of-type(9),
+.Grid-layout svg rect:nth-last-of-type(1) {
+  fill: var(--white);
+  stroke: var(--white);
+}
+.Grid-layout svg rect:nth-last-of-type(2),
+.Grid-layout svg rect:nth-last-of-type(4),
+.Grid-layout svg rect:nth-last-of-type(6),
+.Grid-layout svg rect:nth-last-of-type(8),
+.Grid-layout svg rect:nth-last-of-type(10) {
+  fill: var(--black);
+  stroke: var(--black);
+  stroke-opacity: 1;
+}
+.Active-grid-layout svg rect:nth-last-of-type(3),
+.Active-grid-layout svg rect:nth-last-of-type(5),
+.Active-grid-layout svg rect:nth-last-of-type(7),
+.Active-grid-layout svg rect:nth-last-of-type(9),
+.Active-grid-layout svg rect:nth-last-of-type(1) {
+  fill: var(--black);
+  stroke: var(--black);
+}
+.Active-grid-layout svg rect:nth-last-of-type(2),
+.Active-grid-layout svg rect:nth-last-of-type(4),
+.Active-grid-layout svg rect:nth-last-of-type(6),
+.Active-grid-layout svg rect:nth-last-of-type(8),
+.Active-grid-layout svg rect:nth-last-of-type(10) {
+  fill: var(--white);
+  stroke: var(--white);
 }

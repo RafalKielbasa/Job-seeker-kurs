@@ -1,6 +1,7 @@
 import PositionBar from './Positions'
 import TechnologyBar from './Technologies'
-import OfferList from './Offers'
+import OfferList from './Offers/List'
+import OffersGrid from './Offers/Grid/OffersGrid'
 import Navi from './Navi'
 import Logic from './useHomeLogic'
 
@@ -38,8 +39,17 @@ function Home() {
           setIsRemote={setIsRemote}
         />
       </div>
-      <Navi sort={sort} setSort={setSort} />
-      <OfferList filteredOffers={filteredOffers} />
+      <Navi
+        sort={sort}
+        setSort={setSort}
+        setIsListView={setIsListView}
+        isListView={isListView}
+      />
+      {isListView ? (
+        <OfferList filteredOffers={filteredOffers} />
+      ) : (
+        <OffersGrid filteredOffers={filteredOffers} />
+      )}
     </div>
   )
 }

@@ -1,8 +1,5 @@
-import styled from 'styled-components'
-
-const ListIcon = ({ className }) => (
+const ListIcon = () => (
   <svg
-    className={className}
     width='30'
     height='30'
     viewBox='0 0 30 30'
@@ -74,14 +71,4 @@ const ListIcon = ({ className }) => (
   </svg>
 )
 
-const Styled = styled(ListIcon)`
-  display: flex;
-  > path {
-    fill: ${({ theme }) => theme.universalColors.black};
-  }
-  > rect {
-    stroke: ${({ theme }) => theme.universalColors.black};
-  }
-`
-Styled.displayName = 'ListIcon'
-export default Styled
+export default ListIcon

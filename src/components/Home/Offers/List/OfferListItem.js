@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 
 import { ReactIcon, LocationIcon, RemoteIcon } from 'src/components/Icons'
 
-import './Offers.css'
+import '../Offers.css'
 const OfferListItem = ({ offer }) => {
   const {
     id,

@@ -1,8 +1,5 @@
-import styled from 'styled-components'
-
-const GridLayoutIcon = ({ className }) => (
+const GridLayoutIcon = () => (
   <svg
-    className={className}
     width='30'
     height='30'
     viewBox='0 0 30 30'
@@ -21,10 +18,4 @@ const GridLayoutIcon = ({ className }) => (
   </svg>
 )
 
-const Styled = styled(GridLayoutIcon)`
-  display: flex;
-  stroke: ${({ theme }) => theme.universalColors.black};
-  fill: none;
-`
-Styled.displayName = 'GridLayoutIcon'
-export default Styled
+export default GridLayoutIcon

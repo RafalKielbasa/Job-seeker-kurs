@@ -1,7 +1,7 @@
 import OfferListItem from './OfferListItem'
-import './Offers.css'
+import '../Offers.css'
 
-const OfferList = ({ filteredOffers }) => {
+const OffersList = ({ filteredOffers }) => {
   return (
     <div className='Offer-list'>
       {filteredOffers?.map((offer) => (
@@ -10,4 +10,4 @@ const OfferList = ({ filteredOffers }) => {
     </div>
   )
 }
-export default OfferList
+export default OffersList
