@@ -9,15 +9,15 @@ const ApplyJobForm = () => {
       <div className='Form-content'>
         <div className='Form-input'>
           <div>Full name</div>
-          <input type='text' />
+          <input type='text' placeholder='Your first name and surname' />
         </div>
         <div className='Form-input'>
           <div>Your e-mail</div>
-          <input type='text' />
+          <input type='text' placeholder='johndoe@example.com' />
         </div>
         <div className='Form-input'>
           <div>Your LinkedIn profile</div>
-          <input type='text' />
+          <input type='text' placeholder='https://pl.linkedin.com/' />
         </div>
         <div className='File-input'>
           <div>Choose your CV file</div>
@@ -33,7 +33,7 @@ const ApplyJobForm = () => {
         </div>
         <div className='Form-input'>
           <div>Your Github</div>
-          <input type='text' />
+          <input type='text' placeholder='https://github.com/' />
         </div>
       </div>
       <div className='Check-box'>

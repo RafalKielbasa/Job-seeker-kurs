@@ -319,7 +319,9 @@
 .Form-input input {
   height: 40px;
   border: 1px solid var(--grey);
+  color: var(--grey);
   border-radius: 10px;
+  padding-left: 12px;
 }
 
 .Form-input div {
