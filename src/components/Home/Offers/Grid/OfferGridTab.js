@@ -29,7 +29,9 @@ const OfferGridTab = ({ offer }) => {
             <div>{company}</div>
           </div>
         </div>
-        <div className='Grid-salary'>{`${salaryMin} - ${salaryMax} PLN net 💰`}</div>
+        <div className='Grid-salary'>
+          {salaryMin && `${salaryMin} - ${salaryMax} PLN net 💰`}
+        </div>
         <div className='Grid-offer-info'>
           <div>
             <LocationIcon />

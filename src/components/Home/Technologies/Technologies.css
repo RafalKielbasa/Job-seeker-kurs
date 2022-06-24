@@ -66,9 +66,9 @@
 .Ruby:hover,
 .NodeJS:hover,
 .PHP:hover,
-.Price:hover,
+.Price-range:hover,
 .Remote:hover {
-  border-color: #490df4;
+  border-color: var(--violet);
 }
 
 .Icon-wrapper svg,
@@ -117,7 +117,8 @@
 
 .Remote,
 .Remote-active,
-.Price {
+.Price-range,
+.Price-range-active {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -126,14 +127,15 @@
   height: 38px;
   border: 1px solid var(--black);
   border-radius: 10px;
-
   font-size: 14px;
+  cursor: pointer;
 }
-.Remote-active {
+.Remote-active,
+.Price-range-active {
   background-color: #490df4;
   color: var(--white);
 }
-.Price {
+.Price-range .Price-range-active {
   width: 124px;
   margin-right: 20px;
 }

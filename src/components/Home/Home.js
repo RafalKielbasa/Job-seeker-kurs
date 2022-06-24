@@ -22,6 +22,8 @@ function Home() {
     setIsRemote,
     isListView,
     setIsListView,
+    isPriceRange,
+    setIsPriceRange,
   } = Logic()
   return (
     <div className='Page-container'>
@@ -37,6 +39,8 @@ function Home() {
           setTechnologiesArray={setTechnologiesArray}
           isRemote={isRemote}
           setIsRemote={setIsRemote}
+          isPriceRange={isPriceRange}
+          setIsPriceRange={setIsPriceRange}
         />
       </div>
       <Navi

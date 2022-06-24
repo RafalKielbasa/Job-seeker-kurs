@@ -11,6 +11,7 @@ export default function useHomeLogic() {
   const [filteredOffers, setFilteredOffers] = useState([])
   const [isListView, setIsListView] = useState(true)
   const [isRemote, setIsRemote] = useState(false)
+  const [isPriceRange, setIsPriceRange] = useState(false)
 
   const positionLength = selectedPosition.length
   const technologyLength = technologiesArray.length
@@ -41,15 +42,25 @@ export default function useHomeLogic() {
         seniorityLength !== 0
           ? secondFilter?.filter(({ expLvl }) => expLvl === seniority)
           : secondFilter
-      const lastFilter = isRemote
+      const fourhFilter = isRemote
         ? thirdFilter?.filter(({ remote }) => remote)
         : thirdFilter
+      const lastFilter = isPriceRange
+        ? fourhFilter?.filter(({ salaryMin }) => salaryMin)
+        : fourhFilter
 
       return lastFilter
     }
 
     setFilteredOffers(offersFilter)
-  }, [sort, selectedPosition, technologiesArray, seniority, isRemote])
+  }, [
+    sort,
+    selectedPosition,
+    technologiesArray,
+    seniority,
+    isRemote,
+    isPriceRange,
+  ])
 
   return {
     selectedPosition,
@@ -65,5 +76,7 @@ export default function useHomeLogic() {
     setIsRemote,
     isListView,
     setIsListView,
+    isPriceRange,
+    setIsPriceRange,
   }
 }

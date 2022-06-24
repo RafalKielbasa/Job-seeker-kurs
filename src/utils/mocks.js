@@ -108,6 +108,18 @@ export const JOBOFFERS = [
     positionName: 'DevOps',
     years: 6,
   },
+  {
+    id: 7,
+    position: 'Remote C Developer',
+    company: 'CD PROJECT',
+    city: 'Katowice',
+    technology: 'C',
+    additionalTech: '',
+    remote: true,
+    expLvl: 'Mid',
+    positionName: 'Game',
+    years: 4,
+  },
 ]
 
 export const SENIORITY = ['Junior', 'Mid', 'Senior']

@@ -40,7 +40,9 @@ const OfferListItem = ({ offer }) => {
             </div>
           </div>
           <div className='Right-site-info'>
-            <div className='Salary'>{`${salaryMin} - ${salaryMax} PLN net 💰`}</div>
+            <div className='Salary'>
+              {salaryMin && `${salaryMin} - ${salaryMax} PLN net 💰`}
+            </div>
             <div className='Technology'>{technology}</div>
           </div>
         </div>

@@ -8,13 +8,20 @@ const TechnologyBar = ({
   setTechnologiesArray,
   isRemote,
   setIsRemote,
+  isPriceRange,
+  setIsPriceRange,
 }) => {
+  console.log(isPriceRange)
   const stateButtonName =
-    technologiesArray.length === 0 ? 'Add all' : 'Clear all'
+    technologiesArray.length === 0 ? 'Select all' : 'Clear all'
 
   const remoteClassName = isRemote ? 'Remote-active' : 'Remote'
 
-  const toggleChange = () => setIsRemote((prev) => !prev)
+  const priceRangeClassName = isPriceRange
+    ? 'Price-range-active'
+    : 'Price-range'
+
+  const toggleChange = (func) => func((prev) => !prev)
 
   const handleStateButtonCLick = () =>
     technologiesArray.length === 0
@@ -47,10 +54,18 @@ const TechnologyBar = ({
         ))}
       </div>
       <div className='Additional-filters'>
-        <div className={remoteClassName} onClick={toggleChange}>
+        <div
+          className={remoteClassName}
+          onClick={() => toggleChange(setIsRemote)}
+        >
           100% remote
         </div>
-        <div className='Price'> Price range </div>
+        <div
+          className={priceRangeClassName}
+          onClick={() => toggleChange(setIsPriceRange)}
+        >
+          Price range
+        </div>
       </div>
     </div>
   )
